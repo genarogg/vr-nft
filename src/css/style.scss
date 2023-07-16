@@ -1,0 +1,340 @@
+@import "./lib/lib";
+@import "./general/variables";
+@import "./general/general";
+@import "./layout/layout";
+@import "./theme/dark";
+
+/* * {
+  transition: $transicion600ms;
+}
+
+.container-all-card {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.border-image-container {
+  width: 300px;
+  height: 150px;
+  border: 3px solid;
+  border-image: linear-gradient(to right, #ff9a9e, #fad0c4);
+  border-image-slice: 1;
+  padding: 10px;
+  position: relative;
+}
+
+
+.border-radius-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+
+.master {
+  position: relative;
+  overflow: hidden;
+  width: 336px;
+  max-width: 336px;
+  height: 436px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  .card-back {
+    animation: spin 2s linear infinite;
+  }
+}
+
+.card-back {
+  top: -93px;
+  top: 109px;
+  left: -130px;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  z-index: -11;
+  border-radius: 50%;
+
+  background: linear-gradient(to bottom, #5ddcff, #3c67e3 43%, #4e00c2);
+  background: linear-gradient(to bottom, #2edc17, #0044ff 43%, #ff0000);
+}
+
+.cardContainer {
+  width: 330px;
+  max-width: 330px;
+  height: 430px;
+  border: 1px solid transparent;
+  background-color: #7f7f7f4f;
+  border-radius: 10px;
+  backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+
+  .containerImg {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .bgCard {
+    top: initial !important;
+    max-height: initial !important;
+    max-width: initial !important;
+    height: initial;
+
+    height: 430px;
+    z-index: -1 !important;
+    overflow: hidden;
+  }
+
+  .info {
+    background-color: rgba(#111, 0.8);
+    height: 100%;
+
+    .titulo {
+      h2 {
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        position: absolute;
+        top: 0;
+        right: 11px;
+
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+
+        outline: 0 !important;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        .gatsby-image-wrapper {
+          position: fixed;
+          z-index: -1 !important;
+          max-height: initial !important;
+          max-width: initial !important;
+          top: 6px !important;
+          left: initial !important;
+          right: -80px !important;
+          width: 100px !important;
+          height: 100px !important;
+          animation: rotate 4s linear infinite;
+        }
+      }
+    }
+
+    .contratoAddress {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      font-weight: 600;
+      letter-spacing: normal;
+
+      text-transform: none;
+      width: 100%;
+      background-color: #fff;
+      height: 40px;
+
+      a {
+        height: 34px;
+        color: #111;
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  a {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px; 
+    font-weight: 700;
+
+    outline: 0 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .ventaFinalizada {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 30%;
+    h2 {
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: #ff7575;
+    }
+
+    p {
+      position: absolute;
+      bottom: 20px;
+      line-height: 30px;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .gasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+
+      outline: 0 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .title {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 60px;
+    }
+    .connetContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      position: absolute;
+      bottom: 20px;
+      line-height: 30px;
+
+      p {
+        height: 34px;
+      }
+    }
+  }
+
+  .compraContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 18px;
+
+    .feedback {
+      height: 24px;
+    }
+    .containerMasoMenos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 35px;
+      margin: 10px;
+
+      button {
+        border: 1px solid #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+
+        cursor: pointer;
+
+        &:hover {
+          background-color: #4e00c2;
+        }
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        outline: 0 !important;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  button.connet,
+  .btnComprar {
+    display: block;
+
+    padding: 10px 20px;
+    border: 1px solid #fff;
+
+    width: 190px;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #111;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ */
