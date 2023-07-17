@@ -19,6 +19,7 @@ import imgshart from "../../img/shart.webp";
 const NFT = ({ xConfig, xAabis }) => {
   const truncate = (input, len) =>
     input.length > len ? `${input.substring(0, len)}...` : input;
+  truncate(" ", 5);
 
   const generateConnetion = connect(xConfig, xAabis);
   const dispatch = useDispatch();
