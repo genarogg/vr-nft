@@ -14,7 +14,7 @@ import A from "../nano/A";
 import imgNFT5 from "../../img/NFT/NFT5.webp";
 import imgBG3 from "../../img/bg3.webp";
 import imgshart from "../../img/shart.webp";
-/* import Inicio from "../../consultas/Inicio" */
+
 
 const NFT = ({ xConfig, xAabis }) => {
   const truncate = (input, len) =>

@@ -14,11 +14,11 @@ const Home = () => {
       <Layout>
         <div className="container-all-card">
           <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+          {/*      <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+            <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+          <NFT xConfig={Aconfig()} xAabis={Aabis()} /> */}
         </div>
-        {/* <div>
+        {/* <div>t
           <div>
           
             <div>
