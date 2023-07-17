@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { connect } from "../../redux/blockchain/blockchainActions";
 import { fetchData } from "../../redux/data/dataActions";
 import { claimNFTs } from "../../functionsNFT/claimNFTs";
-
+import { getConfig } from "../../functionsNFT/getConfig";
 import { decrementMintAmount } from "../../functionsNFT/decrementMintAmount";
 import { incrementMintAmount } from "../../functionsNFT/incrementMintAmount";
 import { getData } from "../../functionsNFT/getData";
@@ -15,13 +15,11 @@ import imgNFT5 from "../../img/NFT/NFT5.webp";
 import imgBG3 from "../../img/bg3.webp";
 import imgshart from "../../img/shart.webp";
 
-
 const NFT = ({ xConfig, xAabis }) => {
   const truncate = (input, len) =>
     input.length > len ? `${input.substring(0, len)}...` : input;
   truncate(" ", 5);
 
-  const generateConnetion = connect(xConfig, xAabis);
   const dispatch = useDispatch();
   //@ts-ignore
   const blockchain = useSelector((state) => state.blockchain);
@@ -50,7 +48,7 @@ const NFT = ({ xConfig, xAabis }) => {
   });
 
   useEffect(() => {
-    SET_CONFIG(xConfig);
+    getConfig(SET_CONFIG, xConfig);
   }, []);
 
   useEffect(() => {
@@ -117,7 +115,7 @@ const NFT = ({ xConfig, xAabis }) => {
                           onClick={(e) => {
                             e.preventDefault();
                             //@ts-ignore
-                            dispatch(generateConnetion());
+                            dispatch(connect(xConfig, xAabis));
                             /* detallito */
                             getData(blockchain, dispatch, fetchData);
                           }}

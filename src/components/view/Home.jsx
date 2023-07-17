@@ -1,10 +1,8 @@
 import React from "react";
 
-/* import DemoNftCara1 from "../../../../vr-nft-gatsby/src/componets/viewer/DemoNftCara1";
-import DemoNftCara2 from "./DemoNftCara2";
-import DemoNftCara3 from "./DemoNftCara3"; */
 import Layout from "../layout/Layout";
 import NFT from "./NFT";
+
 import { Aconfig } from "../../configNFT/Aconfig";
 import { Aabis } from "../../configNFT/Aabi";
 
@@ -13,8 +11,9 @@ const Home = () => {
     <>
       <Layout>
         <div className="container-all-card">
+          {/* <NFT /> */}
           <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          {/*      <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+          {/*      
             <NFT xConfig={Aconfig()} xAabis={Aabis()} />
           <NFT xConfig={Aconfig()} xAabis={Aabis()} /> */}
         </div>
