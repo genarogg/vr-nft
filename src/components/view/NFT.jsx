@@ -49,13 +49,13 @@ const NFT = ({ xConfig, xAabis }) => {
 
   useEffect(() => {
     getConfig(SET_CONFIG, xConfig);
-  }, []);
+  }, [xConfig]);
 
   useEffect(() => {
     if (blockchain?.account) {
       getData(blockchain, dispatch, fetchData);
     }
-  }, [blockchain?.account]);
+  }, [blockchain, blockchain?.account, dispatch]);
 
   return (
     <>

@@ -62,7 +62,7 @@ export const connect = (xConfig, xAabis) => {
         const networkId = await ethereum.request({
           method: "net_version",
         });
-        if (networkId == CONFIG.NETWORK.ID) {
+        if (networkId === CONFIG.NETWORK.ID) {
           const SmartContractObj = new Web3EthContract(
             abi,
             CONFIG.CONTRACT_ADDRESS
