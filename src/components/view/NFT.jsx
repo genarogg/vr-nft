@@ -16,10 +16,10 @@ import imgBG3 from "../../img/bg3.webp";
 import imgshart from "../../img/shart.webp";
 /* import Inicio from "../../consultas/Inicio" */
 
-const truncate = (input, len) =>
-  input.length > len ? `${input.substring(0, len)}...` : input;
-
 const NFT = ({ xConfig, xAabis }) => {
+  const truncate = (input, len) =>
+    input.length > len ? `${input.substring(0, len)}...` : input;
+
   const generateConnetion = connect(xConfig, xAabis);
   const dispatch = useDispatch();
   //@ts-ignore
