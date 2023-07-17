@@ -1,5 +1,4 @@
 // constants
-import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
 // log
 import { fetchData } from "../data/dataActions";
@@ -34,36 +33,19 @@ const updateAccountRequest = (payload) => {
 export const connect = (xConfig, xAabis) => {
   return async (dispatch) => {
     dispatch(connectRequest());
-    /*   const abiResponse = await fetch("/config/abi.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    });
-    const abi = await abiResponse.json();
-    const configResponse = await fetch("/config/config.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    });
-    const CONFIG = await configResponse.json(); */
     const CONFIG = xConfig;
     const abi = xAabis;
     const { ethereum } = window;
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
     if (metamaskIsInstalled) {
-      Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
       try {
         const accounts = await ethereum.request({
           method: "eth_requestAccounts",
         });
-        const networkId = await ethereum.request({
-          method: "net_version",
-        });
+        const networkId = await web3.eth.net.getId();
         if (networkId === CONFIG.NETWORK.ID) {
-          const SmartContractObj = new Web3EthContract(
+          const SmartContractObj = new web3.eth.Contract(
             abi,
             CONFIG.CONTRACT_ADDRESS
           );
