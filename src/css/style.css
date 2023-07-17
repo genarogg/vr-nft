@@ -2,3 +2,7 @@
   100%{-webkit-box-shadow:0px -20px 20px 10px rgba(207,220,23,0.3);box-shadow:0px -20px 20px 10px rgba(207,220,23,0.3)}43%{-webkit-box-shadow:0px -20px 20px 10px rgba(0,68,255,0.3);box-shadow:0px -20px 20px 10px rgba(0,68,255,0.3)}86%{-webkit-box-shadow:0px -20px 20px 10px rgba(255,0,0,0.3);box-shadow:0px -20px 20px 10px rgba(255,0,0,0.3)}}@keyframes colorChange{0%,
   100%{-webkit-box-shadow:0px -20px 20px 10px rgba(207,220,23,0.3);box-shadow:0px -20px 20px 10px rgba(207,220,23,0.3)}43%{-webkit-box-shadow:0px -20px 20px 10px rgba(0,68,255,0.3);box-shadow:0px -20px 20px 10px rgba(0,68,255,0.3)}86%{-webkit-box-shadow:0px -20px 20px 10px rgba(255,0,0,0.3);box-shadow:0px -20px 20px 10px rgba(255,0,0,0.3)}}
 /*# sourceMappingURL=style.css.map */
+
+#main > div.container-all-card > div:nth-child(2) > div.cardContainer > div{
+  background-image: none;
+}
