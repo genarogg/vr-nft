@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <Img
           src={imgBg}
           type="bg"
-          styles={{ height: "120vh", backgroundSize: "cover" }}
+          styles={{ height: "120vh", backgroundSize: "cover" , top: "0"}}
         ></Img>
         {children}
       </main>

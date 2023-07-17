@@ -5,5 +5,17 @@
    
     color: #fff;
     text-align: center;
+
+
+    img{
+      width: 200px;
+    }
   }
   
+@media screen and (max-width:600px) {
+  .header {
+
+    margin-bottom: 30px;
+  }
+
+}
