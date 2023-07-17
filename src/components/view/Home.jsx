@@ -3,37 +3,23 @@ import React from "react";
 import Layout from "../layout/Layout";
 import NFT from "./NFT";
 
-import { Aconfig } from "../../configNFT/Aconfig";
-import { Aabis } from "../../configNFT/Aabi";
+import { Jerico, jericoStore } from "../../configNFT/Jerico";
+
+import imgNFT5 from "../../img/NFT/NFT5.webp";
+import imgBG3 from "../../img/bg3.webp";
+
+import { Provider } from "react-redux";
 
 const Home = () => {
   return (
     <>
       <Layout>
         <div className="container-all-card">
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-        </div>
-        {/* <div>t
-          <div>
+          <Provider store={jericoStore}>
+            <NFT xConfig={Jerico()} imgBackground={imgBG3} imgNFT={imgNFT5} />
+          </Provider>
           
-            <div>
-              <p>
-                Please make sure you are connected to the right network (
-                {CONFIG.NETWORK.NAME} Mainnet) and the correct address.
-                Please note: Once you make the purchase, you cannot undo this
-                action.
-              </p>
-              <p>
-                We have set the gas limit to {CONFIG.GAS_LIMIT} for the
-                contract to successfully mint your NFT. We recommend that you
-                don't lower the gas limit.
-              </p>
-            </div>
-          </div>
-        </div> */}
+        </div>
       </Layout>
     </>
   );

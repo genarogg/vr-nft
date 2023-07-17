@@ -11,11 +11,11 @@ import Img from "../nano/Img";
 import A from "../nano/A";
 
 /* import img */
-import imgNFT5 from "../../img/NFT/NFT5.webp";
-import imgBG3 from "../../img/bg3.webp";
-import imgshart from "../../img/shart.webp";
 
-const NFT = ({ xConfig, xAabis }) => {
+import imgshart from "../../img/shart.webp";
+import { xAabis } from "../../configNFT/xAabis";
+
+const NFT = ({ xConfig, imgBackground, imgNFT }) => {
   const truncate = (input, len) =>
     input.length > len ? `${input.substring(0, len)}...` : input;
   truncate(" ", 5);
@@ -61,9 +61,9 @@ const NFT = ({ xConfig, xAabis }) => {
     <>
       <div className="master">
         <div className="cardContainer">
-          <Img src={imgBG3} type="bg" css="bgCard">
+          <Img src={imgBackground} type="bg" css="bgCard">
             <div className="containerImg">
-              <Img src={imgNFT5} type="img"></Img>
+              <Img src={imgNFT} type="img"></Img>
             </div>
 
             <div className="info">

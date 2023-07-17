@@ -1,4 +1,4 @@
-export const Aabis = () => {
+export const xAabis = () => {
   const data = [
     {
       inputs: [
