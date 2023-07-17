@@ -117,7 +117,7 @@ const NFT = ({ xConfig, xAabis }) => {
                           onClick={(e) => {
                             e.preventDefault();
                             //@ts-ignore
-                            dispatch(generateConnetion);
+                            dispatch(generateConnetion());
                             /* detallito */
                             getData(blockchain, dispatch, fetchData);
                           }}
