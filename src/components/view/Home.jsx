@@ -14,9 +14,9 @@ const Home = () => {
       <Layout>
         <div className="container-all-card">
           <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          {/*  <DemoNftCara1 xConfig={Aconfig()} xAabis={Aabis()} />
-          <DemoNftCara2 xConfig={Aconfig()} xAabis={Aabis()} />
-          <DemoNftCara3 xConfig={Aconfig()} xAabis={Aabis()} /> */}
+          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
         </div>
         {/* <div>
           <div>

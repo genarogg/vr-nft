@@ -2,11 +2,12 @@ import React from "react";
 
 import Img from "../nano/Img";
 
+import imgLogo from "../../img/logo.webp";
+
 const Header = () => {
   return (
     <header className="header" id="header">
-      {/* <Img src={Inicio().imgLogo} css="logo" /> */}
-      <h1>header</h1>
+      <Img src={imgLogo} css="logo" type="img" />
     </header>
   );
 };

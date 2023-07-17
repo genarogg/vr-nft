@@ -15,7 +15,7 @@ const Ximg = ({
       <>
         <div
           style={Object.assign(
-            { backgroundImage: `url(${src})`, width: "100%", position: "fixed" },
+            { backgroundImage: `url(${src})`, width: "100%", position: "fixed", zIndex: "-100", },
             styles
           )}
           className={css}

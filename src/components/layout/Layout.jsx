@@ -10,9 +10,12 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main id="main" className="main">
-        <Img src={imgBg} type="bg" styles={{ height: "100vh" }}>
-          {children}
-        </Img>
+        <Img
+          src={imgBg}
+          type="bg"
+          styles={{ height: "120vh", backgroundSize: "cover" }}
+        ></Img>
+        {children}
       </main>
       <Footer />
     </>
