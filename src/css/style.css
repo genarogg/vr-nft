@@ -4,5 +4,5 @@
 /*# sourceMappingURL=style.css.map */
 
 #main > div.container-all-card > div:nth-child(2) > div.cardContainer > div{
-  background-image: none;
+  background-image: none !important;
 }
