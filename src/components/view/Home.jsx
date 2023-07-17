@@ -11,11 +11,10 @@ const Home = () => {
     <>
       <Layout>
         <div className="container-all-card">
-          {/* <NFT /> */}
           <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          {/*      
-            <NFT xConfig={Aconfig()} xAabis={Aabis()} />
-          <NFT xConfig={Aconfig()} xAabis={Aabis()} /> */}
+          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
+          <NFT xConfig={Aconfig()} xAabis={Aabis()} />
         </div>
         {/* <div>t
           <div>
