@@ -3,10 +3,10 @@ import React from "react";
 import Layout from "../layout/Layout";
 import NFT from "./NFT";
 
-import { imgGerico, Jerico, jericoStore } from "../../configNFT/Jerico";
-import { imgGrigora, Grigora, grigoraStore } from "../../configNFT/Grigora";
-import { imgSpartan, spartanStore, Spartan } from "../../configNFT/Spartan";
-import { imgEros, erosStore, Eros } from "../../configNFT/Eros";
+import { imgGerico, Jerico } from "../../configNFT/Jerico";
+import { imgGrigora, Grigora } from "../../configNFT/Grigora";
+import { imgSpartan, Spartan } from "../../configNFT/Spartan";
+import { imgEros, Eros } from "../../configNFT/Eros";
 
 const Home = () => {
   return (

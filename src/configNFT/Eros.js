@@ -6,22 +6,22 @@ import dataReducer from "../redux/data/dataReducer";
 import imgEros from "../img/NFT/eros.webp";
 const Eros = () => {
   const data = {
-    CONTRACT_ADDRESS: "0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
+    CONTRACT_ADDRESS: "0xA8D2AD818868fEa0F6A9c6C535F7c748Df290A91",
     SCAN_LINK:
-      "https://polygonscan.com/address/0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
+      "https://polygonscan.com/address/0xa8d2ad818868fea0f6a9c6c535f7c748df290a91",
     NETWORK: {
       NAME: "Polygon",
       SYMBOL: "Matic",
       ID: 137,
     },
-    NFT_NAME: "Grigora",
-    SYMBOL: "Gg",
+    NFT_NAME: "ErosVr",
+    SYMBOL: " Evr",
     MAX_SUPPLY: 50,
-    WEI_COST: 13000000000000000000,
-    DISPLAY_COST: 13,
+    WEI_COST: 33000000000000000000,
+    DISPLAY_COST: 33,
     GAS_LIMIT: 285000,
     MARKETPLACE: "Opeansea",
-    MARKETPLACE_LINK: "https://opensea.io/es/collection/grigora-1",
+    MARKETPLACE_LINK: "https://opensea.io/es/collection/erosvr-1",
     SHOW_BACKGROUND: true,
   };
 
