@@ -9,13 +9,13 @@ import { incrementMintAmount } from "../../functionsNFT/incrementMintAmount";
 import { getData } from "../../functionsNFT/getData";
 import Img from "../nano/Img";
 import A from "../nano/A";
-
+import imgBG3 from "../../img/bg3.webp";
 /* import img */
 
 import imgshart from "../../img/shart.webp";
 import { xAabis } from "../../configNFT/xAabis";
 
-const NFT = ({ xConfig, imgBackground, imgNFT }) => {
+const NFT = ({ xConfig, imgBg = imgBG3, imgNFT }) => {
   const truncate = (input, len) =>
     input.length > len ? `${input.substring(0, len)}...` : input;
   truncate(" ", 5);
@@ -61,7 +61,7 @@ const NFT = ({ xConfig, imgBackground, imgNFT }) => {
     <>
       <div className="master">
         <div className="cardContainer">
-          <Img src={imgBackground} type="bg" css="bgCard">
+          <Img src={imgBg} type="bg" css="bgCard">
             <div className="containerImg">
               <Img src={imgNFT} type="img"></Img>
             </div>

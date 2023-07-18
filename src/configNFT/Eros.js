@@ -3,26 +3,25 @@ import thunk from "redux-thunk";
 import blockchainReducer from "../redux/blockchain/blockchainReducer";
 import dataReducer from "../redux/data/dataReducer";
 
-import imgGerico from "../img/NFT/jerico.webp";
-
-const Jerico = () => {
+import imgEros from "../img/NFT/eros.webp";
+const Eros = () => {
   const data = {
-    CONTRACT_ADDRESS: "0x4f238E07c335c384fdB47f442a90E130408400a3",
+    CONTRACT_ADDRESS: "0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
     SCAN_LINK:
-      "https://polygonscan.com/address/0x4f238e07c335c384fdb47f442a90e130408400a3",
+      "https://polygonscan.com/address/0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
     NETWORK: {
       NAME: "Polygon",
       SYMBOL: "Matic",
       ID: 137,
     },
-    NFT_NAME: "JericoVr",
-    SYMBOL: "Jvr",
+    NFT_NAME: "Grigora",
+    SYMBOL: "Gg",
     MAX_SUPPLY: 50,
-    WEI_COST: 27000000000000000000,
-    DISPLAY_COST: 27,
+    WEI_COST: 13000000000000000000,
+    DISPLAY_COST: 13,
     GAS_LIMIT: 285000,
     MARKETPLACE: "Opeansea",
-    MARKETPLACE_LINK: "https://opensea.io/es/collection/jericovr",
+    MARKETPLACE_LINK: "https://opensea.io/es/collection/grigora-1",
     SHOW_BACKGROUND: true,
   };
 
@@ -40,7 +39,6 @@ const composeEnhancers = compose(applyMiddleware(...middleware));
 const configureStore = () => {
   return createStore(rootReducer, composeEnhancers);
 };
+const erosStore = configureStore();
 
-const jericoStore = configureStore();
-
-export { imgGerico, jericoStore, Jerico };
+export { imgEros, erosStore, Eros };

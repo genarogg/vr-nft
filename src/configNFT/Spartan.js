@@ -3,24 +3,25 @@ import thunk from "redux-thunk";
 import blockchainReducer from "../redux/blockchain/blockchainReducer";
 import dataReducer from "../redux/data/dataReducer";
 
-export const Spartan = () => {
+import imgSpartan from "../img/NFT/spartan.webp";
+const Spartan = () => {
   const data = {
-    CONTRACT_ADDRESS: "0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
+    CONTRACT_ADDRESS: "0x505429D38703Bc8844CeF5e682C5449aa26A361e",
     SCAN_LINK:
-      "https://polygonscan.com/address/0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
+      "https://polygonscan.com/address/0x505429d38703bc8844cef5e682c5449aa26a361e",
     NETWORK: {
       NAME: "Polygon",
       SYMBOL: "Matic",
       ID: 137,
     },
-    NFT_NAME: "Grigora",
-    SYMBOL: "Gg",
+    NFT_NAME: "Spartan",
+    SYMBOL: "Spt",
     MAX_SUPPLY: 50,
-    WEI_COST: 13000000000000000000,
-    DISPLAY_COST: 13,
+    WEI_COST: 20000000000000000000,
+    DISPLAY_COST: 20,
     GAS_LIMIT: 285000,
     MARKETPLACE: "Opeansea",
-    MARKETPLACE_LINK: "https://opensea.io/es/collection/grigora-1",
+    MARKETPLACE_LINK: "https://opensea.io/es/collection/spartan-8",
     SHOW_BACKGROUND: true,
   };
 
@@ -38,5 +39,6 @@ const composeEnhancers = compose(applyMiddleware(...middleware));
 const configureStore = () => {
   return createStore(rootReducer, composeEnhancers);
 };
+const spartanStore = configureStore();
 
-export const spartanStore = configureStore();
+export { imgSpartan, spartanStore, Spartan };

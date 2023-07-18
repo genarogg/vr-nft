@@ -3,7 +3,9 @@ import thunk from "redux-thunk";
 import blockchainReducer from "../redux/blockchain/blockchainReducer";
 import dataReducer from "../redux/data/dataReducer";
 
-export const Grigora = () => {
+import imgGrigora from "../img/NFT/grigora.webp";
+
+const Grigora = () => {
   const data = {
     CONTRACT_ADDRESS: "0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
     SCAN_LINK:
@@ -23,7 +25,6 @@ export const Grigora = () => {
     MARKETPLACE_LINK: "https://opensea.io/es/collection/grigora-1",
     SHOW_BACKGROUND: true,
   };
-
   return data;
 };
 
@@ -39,4 +40,6 @@ const configureStore = () => {
   return createStore(rootReducer, composeEnhancers);
 };
 
-export const grigoraStore = configureStore();
+const grigoraStore = configureStore();
+
+export { imgGrigora, grigoraStore, Grigora };
