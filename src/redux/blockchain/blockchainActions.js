@@ -34,7 +34,8 @@ export const connect = (xConfig, xAabis) => {
   return async (dispatch) => {
     dispatch(connectRequest());
     const CONFIG = xConfig;
-    const abi = xAabis;
+    const abi = xAabis();
+
     const { ethereum } = window;
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
     if (metamaskIsInstalled) {
