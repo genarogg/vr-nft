@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
+  "SCAN_LINK": "https://polygonscan.com/address/0xd44a78BC1984C7ba3b4c50dcaf82e84f1677C08B",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Grigora",
+  "SYMBOL": "Gg",
+  "MAX_SUPPLY": 50,
+  "WEI_COST": 13000000000000000000,
+  "DISPLAY_COST": 13,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/es/collection/grigora-1",
+  "SHOW_BACKGROUND": true
+}
